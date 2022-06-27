@@ -23,7 +23,7 @@ public class OrderTest {
     }
 
     @Test
-    public void shouldSendForm() {
+    public void shouldPlanFirstDate() {
         val user = DataGenerator.Registration.generateUser("ru");
         $x("//input[@placeholder=\"Город\"]").val(user.getCity());
         String dateOfMeeting = DataGenerator.generateDate(3);
@@ -37,7 +37,7 @@ public class OrderTest {
     }
 
     @Test
-    public void shouldSendForm2Date() {
+    public void shouldPlanSecondDate() {
         val user = DataGenerator.Registration.generateUser("ru");
         $x("//input[@placeholder=\"Город\"]").val(user.getCity());
         val firstDate = 3;
